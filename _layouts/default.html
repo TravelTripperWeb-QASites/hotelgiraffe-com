@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
-  <head></head>
-  <body>
-    <div>
+  <head>
+  	{% include head.html %}
+
+  </head>
+<body id="{{page.parent}}" class="{{page.pageclass}} {{site.default_lang}}" onLoad="window._pulsarDocLoad=true">
+    {% include header.html %}
       
         {{ content }}
       
-    </div>
+   {% include footer.html %}
   </body>
 </html>
