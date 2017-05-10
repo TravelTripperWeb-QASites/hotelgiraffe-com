@@ -1,0 +1,27 @@
+
+
+/* LAYOUT */
+/* ----------------------------------------- */
+body {
+	margin: 0;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	LAYOUT
+/*-----------------------------------------------------------------------------------*/
+
+#wrapper, .wrap {
+	width: 980px;
+	margin: 0 auto;
+}
+
+
+#container {
+	width: 980px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	padding-top: 50px;
+	padding-bottom: 200px;
+	
+}

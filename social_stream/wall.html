@@ -1,0 +1,197 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title></title>
+<meta name="description" content="" />
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script type="text/javascript" src="/social_stream/inc/js/jquery.plugins.js"></script>
+<script type="text/javascript" src="/social_stream/inc/js/jquery.site.js"></script>
+<script type="text/javascript" src="/social_stream/js/jquery.social.stream.wall.1.3.js"></script>
+<script type="text/javascript" src="/social_stream/js/jquery.social.stream.1.5.4.min.js"></script>
+
+<link rel="stylesheet" href="/social_stream/inc/layout.css" media="all" />
+<link rel="stylesheet" href="/social_stream/css/dcsns_wall.css" media="all" />
+
+
+<style>
+
+#myiFrame{
+    background-color: #f5f1e9;
+}
+
+#wall {
+	padding: 25px 0 30px 25px;
+	min-height: 2000px;
+	background: #f5f1e9;
+}
+
+.stream li {
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+	background: #fffefd;
+}
+
+h1 {
+	text-align: center;
+	width: 100%;
+	height: 51px;
+}
+
+.dcsns-toolbar .filter li a {
+	background: #B7916D;
+}
+
+.dcsns-toolbar {
+	width: 243px;
+	margin: 0 auto;
+}
+
+.sharewrap {
+	height: 35px;
+	padding: 0;
+	padding-top: 10px;
+	width: 930px;
+	
+}.sharebox {
+	clear: both;
+	padding: 0px;
+	overflow: hidden;
+	position: relative;
+	width: 192px;
+	margin: 0 auto;
+}
+
+.addthis_default_style .at300b,.addthis_default_style .at300bo,.addthis_default_style .at300m {
+	padding: 5px 3px 0 3px !important;
+}
+
+.addthis_toolbox a {
+	padding: 5px 3px 0 3px !important;
+	margin: 0 1px 1px 0;
+	display: block;
+	float: left;
+	background: #B7916D;
+	height: 28px;
+}
+
+.addthis_toolbox a img {
+	height: 24px;
+	margin: 0;
+}
+
+.addthis_toolbox a.addthis_button_facebook_follow:hover {
+	background-color: #3b5998;
+}
+
+a.addthis_button_twitter_follow:hover {
+	background-color: #4ec2dc;
+}
+
+a.addthis_button_google_follow:hover {
+	background-color: #2d2d2d;
+}
+
+a.addthis_button_youtube_follow:hover {
+	background-color: #DF1F1C;
+}
+
+a.addthis_button_pinterest_follow:hover {
+	background-color: #CB2528;
+}
+
+a.addthis_button_instagram_follow:hover {
+	background-color: #413A33;
+}
+
+</style>
+
+
+<script type="text/javascript">
+
+$(function(){
+
+	$('a.dropDown_btn').click(function() {
+		$(this).toggleClass('dropBg_color');
+		  $('#dropNav .dropDown').slideToggle('fast', function() {
+			// Animation complete.
+		  });
+	});
+
+	$('#social-stream').dcSocialStream({
+
+		feeds: {
+			instagram: {
+				id: '!589913878',
+				accessToken: '589913878.b4a0eb8.687f634f327a4662be58bb7babea5ef1',
+				redirectUrl: 'http://www.hotelgiraffe.com/_pages/social-hub.html',
+				clientId: 'b4a0eb82db634691bb76545611464b9b',
+				comments: 3,
+				likes: 10
+			},
+			twitter: {
+				id: 'hotelgiraffe',
+				thumb: true
+			},
+			facebook: {
+				id: '11535083908'
+			},
+			google: {
+				id: '112938200091130740145'
+			},
+			youtube: {
+				id: 'LibraryHotelLHC'
+			},
+			pinterest: {
+				id: 'libraryhotellhc,libraryhotellhc/hotel-giraffe-new-york/'
+			}
+		},
+		rotate: {
+			delay: 0
+		},
+		twitterId: 'hotelgiraffe',
+		control: false,
+		filter: false,
+		wall: true,
+		cache: false,
+		max: 'limit',
+		limit: 5,
+		iconPath: '/social_stream/images/dcsns-dark/',
+		imagePath: '/social_stream/images/dcsns-dark/'
+	});		 
+
+});
+
+</script>
+
+</head>
+
+<body>
+
+<div id="wall">	
+
+			<div class="sharewrap"> 
+				<div class="sharebox">
+						<!-- AddThis Follow BEGIN -->
+						<div class="addthis_toolbox addthis_32x32_style addthis_default_style">
+							<a class="addthis_button_facebook_follow" addthis:userid="11535083908"><img src="/social_stream/images/dcsns-dark/facebook.png" alt=""></a>
+							<a class="addthis_button_twitter_follow" addthis:userid="hotelgiraffe"><img src="/social_stream/images/dcsns-dark/twitter.png" alt=""></a>
+							<a class="addthis_button_google_follow" addthis:userid="112938200091130740145"><img src="/social_stream/images/dcsns-dark/google.png" alt=""></a>
+							<a class="addthis_button_youtube_follow" addthis:userid="LibraryHotelLHC"><img src="/social_stream/images/dcsns-dark/youtube.png" alt=""></a>
+							<a class="addthis_button_pinterest_follow" addthis:userid="libraryhotellhc/hotel-giraffe-new-york/"><img src="/social_stream/images/dcsns-dark/pinterest.png" alt=""></a>
+							<a class="addthis_button_instagram_follow" addthis:userid="hotelgiraffe"><img src="/social_stream/images/dcsns-dark/instagram.png" alt=""></a>
+						</div>
+						<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f36246b6e76da85"></script>
+						<!-- AddThis Follow END -->
+				</div>
+			</div>
+
+			<div id="social-stream"></div>
+
+		</div>
+
+</body>
+</html>
