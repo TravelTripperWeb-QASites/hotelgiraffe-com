@@ -1,15 +1,9 @@
+url: "https://www.libraryhotel.com/"
 
-gems:
-- jekyll-sitemap
-keep_files:
-- assets
-rsync_copy:
-- _assets
-exclude:
-- sitemap.json
-- media.json
-- old_media.json
-- models.json
-
+# Build settings
 default_lang: 'en'
-languages: ['en']
+languages: ['en'] 
+permalink: pretty
+
+keep_files: ['assets']
+rsync_copy: ['_assets']
