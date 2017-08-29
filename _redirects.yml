@@ -1,0 +1,7 @@
+---
+- rooms: rooms
+- rooms/: rooms
+- Rooms: rooms
+- Rooms/: rooms
+- ROOMS: rooms
+- ROOMS/: rooms
