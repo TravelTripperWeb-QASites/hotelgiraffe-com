@@ -1,10 +1,7 @@
-{
-
- "name":{
+{"name":{
    "required": "true",
    "type": "string"
- },
- "slug":{
+ },"slug":{
    "type": "url_slug"
  }
 }
