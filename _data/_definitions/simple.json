@@ -3,6 +3,8 @@
  "name":{
    "required": "true",
    "type": "string"
+ },
+ "slug":{
+   "type": "url_slug"
  }
- 
 }
